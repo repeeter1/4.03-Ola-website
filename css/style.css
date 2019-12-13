@@ -11,6 +11,26 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.navbar {
+header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 4rem;
+}
+
+.navbar {
+  flex-grow: 2;
+  padding: 0 50px;
+  max-width: 800px;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+}
+
+main {
+  background-color: lawngreen;
 }
