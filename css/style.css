@@ -1,19 +1,22 @@
 html {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.1875rem;
+  line-height: 1.6875rem;
+}
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
-:root {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* LATER VERIJDEREN */
 h1 {
-  margin: 0;
+  font-family: "Stick-A-RoundW00-Stick-A-Round";
 }
 
 header {
@@ -44,13 +47,91 @@ header {
 .navbar ul li a {
   padding: 1rem;
   color: #f30501;
+  text-decoration: none;
 }
 .navbar ul li a:hover {
   background-color: #f30501;
   color: #fff;
 }
+.fa-search {
+  color: #f30501;
+}
 
 main {
-  background-color: lawngreen;
+  background-color: #f30501;
   height: 2500px;
+}
+
+/* main */
+
+/* Jumbo */
+
+.jumbo {
+  background-color: #ff3026;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.jumbo h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+/* products */
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  flex: auto;
+  flex: 0 0 25%;
+}
+
+.product img {
+  display: flex;
+  width: 100%;
+}
+
+/* our story */
+
+.our-story {
+  background: #46a916;
+  padding: 3rem;
+}
+
+.our-story--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-story--text {
+  margin-left: 2rem;
+}
+
+.our-story h1 {
+  margin: 0;
+  color: #fff;
+  font-weight: 100;
+}
+.our-story a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.our-story--wrapper img {
+  width: 40%;
+}
+
+/* discover */
+
+.discover-our-icecream {
+  padding: 3rem;
+  background: #fd0;
+}
+
+.discover-our-icecream--wrapper h1 {
+  margin-left: auto;
+  margin-right: auto;
 }
