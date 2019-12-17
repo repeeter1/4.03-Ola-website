@@ -9,14 +9,19 @@ body {
   font-size: 1.1875rem;
   line-height: 1.6875rem;
 }
+a {
+  text-decoration: none;
+}
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Stick-A-RoundW00-Stick-A-Round";
+  font-weight: 100;
 }
 
 header {
@@ -129,9 +134,45 @@ main {
 .discover-our-icecream {
   padding: 3rem;
   background: #fd0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.discover-our-icecream h1 {
+  color: #f30501;
+  font-size: 3rem;
+}
+.discover-our-icecream--wrapper {
+  display: flex;
+}
+.discover-our-icecream--glutenfree {
+  display: flex;
+  background: url("/images/glutenfree.jpg") top left/cover no-repeat;
+  height: 265px;
+  width: 430px;
+  justify-content: center;
+  align-items: center;
+}
+.discover-our-icecream--childeren {
+  display: flex;
+  background: url("/images/childeren.jpg") top left/cover no-repeat;
+  height: 265px;
+  width: 430px;
+  justify-content: center;
+  align-items: center;
 }
 
-.discover-our-icecream--wrapper h1 {
-  margin-left: auto;
-  margin-right: auto;
+.discover-our-icecream--image-header {
+  color: #fff;
+}
+button {
+  margin: 2rem;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 1px solid #f30501;
+  border-radius: 3rem;
+  font-size: 1rem;
+}
+button a {
+  color: #f30501;
 }
