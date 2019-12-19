@@ -2,20 +2,26 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 1.1875rem;
-  line-height: 1.6875rem;
-}
-a {
-  text-decoration: none;
-}
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+:root {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px; /* eerst vaste waarde geven voor je hem relatief kunt maken */
+  font-size: 1.1875rem;
+  line-height: 1.6875rem;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1,
@@ -33,44 +39,48 @@ header {
   position: sticky;
   top: 0;
 }
+
 .header-logo {
   height: 65px;
   width: 65px;
 }
+
 .navbar {
   flex-grow: 2;
   padding: 0 50px;
   max-width: 800px;
   align-items: stretch;
 }
+
 .navbar ul {
   display: flex;
   list-style: none;
   padding: 0;
   justify-content: space-between;
 }
-.navbar ul li a {
+
+.navbar a {
   padding: 1rem;
   color: #f30501;
   text-decoration: none;
 }
-.navbar ul li a:hover {
+
+.navbar a:hover {
   background-color: #f30501;
   color: #fff;
 }
+
 .fa-search {
   color: #f30501;
 }
 
+/* main */
 main {
-  background-color: #f30501;
-  height: 2500px;
+  background-color: #f30501; /* custom property gebruiken ? */
+  height: 2500px; /* zeker weten? */
 }
 
-/* main */
-
 /* Jumbo */
-
 .jumbo {
   background-color: #ff3026;
   display: flex;
@@ -78,12 +88,13 @@ main {
   justify-content: center;
   padding-top: 2rem;
 }
+
 .jumbo h1 {
   font-size: 5rem;
   color: #fff;
 }
-/* products */
 
+/* products */
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -100,7 +111,6 @@ main {
 }
 
 /* our story */
-
 .our-story {
   background: #46a916;
   padding: 3rem;
@@ -111,6 +121,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 .our-story--text {
   margin-left: 2rem;
 }
@@ -120,6 +131,7 @@ main {
   color: #fff;
   font-weight: 100;
 }
+
 .our-story a {
   color: #fff;
   text-decoration: none;
@@ -130,7 +142,6 @@ main {
 }
 
 /* discover */
-
 .discover-our-icecream {
   padding: 3rem;
   background: #fd0;
@@ -138,24 +149,28 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
 .discover-our-icecream h1 {
   color: #f30501;
   font-size: 3rem;
 }
+
 .discover-our-icecream--wrapper {
   display: flex;
 }
+
 .discover-our-icecream--glutenfree {
   display: flex;
-  background: url("/images/glutenfree.jpg") top left/cover no-repeat;
+  background: url("images/glutenfree.jpg") no-repeat top left / cover; /* volgorde */
   height: 265px;
   width: 430px;
   justify-content: center;
   align-items: center;
 }
+
 .discover-our-icecream--childeren {
   display: flex;
-  background: url("/images/childeren.jpg") top left/cover no-repeat;
+  background: url("images/childeren.jpg") top left/cover no-repeat; /* geen absolute paden gebruiken */
   height: 265px;
   width: 430px;
   justify-content: center;
@@ -165,6 +180,7 @@ main {
 .discover-our-icecream--image-header {
   color: #fff;
 }
+
 button {
   margin: 2rem;
   padding: 1rem 2rem;
@@ -173,6 +189,7 @@ button {
   border-radius: 3rem;
   font-size: 1rem;
 }
+
 button a {
   color: #f30501;
 }
